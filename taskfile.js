@@ -16,3 +16,5 @@ function * watch(task){
 }
 
 module.exports.watch = watch
+module.exports.compileJS = compileJS //一定要export
+

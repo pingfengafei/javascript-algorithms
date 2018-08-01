@@ -4,16 +4,18 @@ module.exports = {
   bail: false,
 
   // Indicates whether each individual test should be reported during the run.
-  verbose: false,
+  verbose: true,
 
   // Indicates whether the coverage information should be collected while executing the test
   collectCoverage: false,
+
+  testURL: 'http://localhost/',
 
   // The directory where Jest should output its coverage files.
   coverageDirectory: './coverage/',
 
   // If the test path matches any of the patterns, it will be skipped.
-  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/src/'],
 
   // If the file path matches any of the patterns, coverage information will be skipped.
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],

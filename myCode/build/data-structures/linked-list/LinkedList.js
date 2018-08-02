@@ -94,9 +94,11 @@ var SingLinkedList = function () {
         return null;
       }
 
+      var deletedNode = this.head;
+
       this.head = this.head.next;
 
-      return this;
+      return this.head;
     }
   }, {
     key: 'deleteTail',
@@ -151,5 +153,4 @@ var SingLinkedList = function () {
 }();
 
 var LinkedList = SingLinkedList;
-
 exports.default = LinkedList;

@@ -15,7 +15,7 @@ module.exports = {
   coverageDirectory: './coverage/',
 
   // If the test path matches any of the patterns, it will be skipped.
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/src/'],
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/src/', '<rootDir>/myCode/src/'],
 
   // If the file path matches any of the patterns, coverage information will be skipped.
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],

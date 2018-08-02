@@ -73,9 +73,11 @@ class SingLinkedList {
       return null
     }
 
+    var deletedNode = this.head
+
     this.head = this.head.next
 
-    return this
+    return this.head
   }
 
   deleteTail () {
@@ -122,5 +124,4 @@ class SingLinkedList {
 }
 
 const LinkedList = SingLinkedList
-
 export default LinkedList
